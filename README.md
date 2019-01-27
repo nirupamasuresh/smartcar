@@ -11,7 +11,7 @@ Sample Request/Responses \
 Request: \
 GET http://localhost:8080/vehicles/1234 
 
-Response: \
+Response: 
 ```json
 {
     "vin": "123123412412",
@@ -20,11 +20,11 @@ Response: \
     "doorCount": 4
 }
 ```
-\
+
 Request: \
 GET http://localhost:8080/vehicles/1234/doors 
 
-Response:\
+Response:
 ```json
 [
     {
@@ -45,27 +45,27 @@ Response:\
     }
 ]
 ```
-\
+
 Request: \
 GET http://localhost:8080/vehicles/1234/fuel 
 
-Response:\
+Response:
 ```json
 {
     "percent": 58.41
 }
 ```
-\
+
 Request: \
 GET http://localhost:8080/vehicles/1234/battery 
 
-Response:\
+Response:
 ```json
 {
     "percent": null
 }
 ```
-\
+
 Request: \
 POST http://localhost:8080/vehicles/1235/engine 
 ```json
@@ -73,8 +73,8 @@ POST http://localhost:8080/vehicles/1235/engine
   "action": "START"
 }
 ```
-\
-Response: \
+
+Response: 
 ```json
 {
     "status": "error"
