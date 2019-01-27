@@ -29,6 +29,9 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 import static org.mockito.Mockito.mock;
 
+/**
+ * Tests the service layer by mocking the GM API calls
+ */
 @RunWith(MockitoJUnitRunner.class)
 public class SmartcarServiceTest {
 

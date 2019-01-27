@@ -1,11 +1,8 @@
 package com.smartcar.controllers;
 
 import com.smartcar.service.SmartcarService;
-import com.smartcar.utils.SmartcarConstants;
-import com.smartcar.utils.SmartcarUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.client.RestTemplate;
 
 import java.util.Map;
 

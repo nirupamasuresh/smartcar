@@ -5,12 +5,10 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.smartcar.utils.SmartcarConstants;
 import com.smartcar.utils.SmartcarUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -20,6 +18,16 @@ import java.util.Map;
 public class SmartcarService {
 
     RestTemplate restTemplate = new RestTemplate();
+
+    public static void main(String[] args) {
+//        System.out.println(getVehicleDoors("1234"));
+        System.out.println(new SmartcarService().getVehicleInfo("1234"));
+//        System.out.println(getEnergy("1234"));
+//        System.out.println(getBatteryLevel("1234"));
+//        Map<String, String> command = new HashMap<>();
+//        command.put("action", "START|STOP");
+//        System.out.println(getActionEngine("1234", command));
+    }
 
     /**
      * Calls the GM API to get vehicle information
@@ -113,15 +121,5 @@ public class SmartcarService {
                 .replaceAll(SmartcarConstants.FAILED, SmartcarConstants.ERROR);
         resp.addProperty(SmartcarConstants.STATUS, status);
         return resp;
-    }
-
-    public static void main(String[] args) {
-//        System.out.println(getVehicleDoors("1234"));
-        System.out.println(new SmartcarService().getVehicleInfo("1234"));
-//        System.out.println(getEnergy("1234"));
-//        System.out.println(getBatteryLevel("1234"));
-//        Map<String, String> command = new HashMap<>();
-//        command.put("action", "START|STOP");
-//        System.out.println(getActionEngine("1234", command));
     }
 }

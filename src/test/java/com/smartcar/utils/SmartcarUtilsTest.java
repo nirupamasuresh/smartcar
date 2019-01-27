@@ -5,13 +5,15 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import org.junit.Test;
 
-import java.util.List;
 import java.util.Map;
 
 import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 
+/**
+ * Tests for SmartcarUtils
+ */
 public class SmartcarUtilsTest {
     private static final Gson GSON = new Gson();
 
